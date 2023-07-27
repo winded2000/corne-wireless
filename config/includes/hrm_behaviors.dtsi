@@ -20,15 +20,14 @@
         hold-trigger-key-positions = <TRIGGER_POS>; \
         hold-trigger-on-release; \
     )
-// Add a line
-MAKE_HRM(hml, &kp, &kp, KEYS_R KEYS_T);
-// Add a line
-MAKE_HRM(hmr, &kp, &kp, KEYS_L KEYS_T);
-// Add a line
+MAKE_HRM(hml, &kp, &kp, KEYS_R KEYS_T)  // left-hand HRMs
+MAKE_HRM(hmr, &kp, &kp, KEYS_L KEYS_T)  // right-hand HRMs
 
 / {
 
     behaviors {
+
+        // Positional Homerow mods
         // Homerow mods that prevent accidental activations when rolling keys,
         // such as when typing `st` or `ne` on colemak-dh layouts or `as` on
         // qwerty.
