@@ -1,4 +1,5 @@
 // Make sure settings.dtsi is included before this file
+// Add a line
 
 #include "../../zmk-nodefree-config/keypos_def/keypos_42keys.h"
 #include "../../zmk-nodefree-config/helper.h"
@@ -20,8 +21,8 @@
         hold-trigger-key-positions = <TRIGGER_POS>; \
         hold-trigger-on-release; \
     )
-MAKE_HRM(hml, &kp, &kp, KEYS_R KEYS_T)  // left-hand HRMs
-MAKE_HRM(hmr, &kp, &kp, KEYS_L KEYS_T)  // right-hand HRMs
+MAKE_HRM(hml, &kp, &kp, KEYS_R KEYS_T);
+MAKE_HRM(hmr, &kp, &kp, KEYS_L KEYS_T);
 
 / {
 
